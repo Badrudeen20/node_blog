@@ -1,0 +1,89 @@
+ <!-- comment-->
+        
+    <div class="comment" id="commentContainer">
+           <!--    <form  id="ind0" >
+                <div class="form-group">
+                    <span>Leave a comment</span>
+                    <textarea type="text" rows="4" cols="50" name="content" required></textarea>
+                </div>
+
+                <div class="form-group user_name">
+                    <span>Name</span>
+                    <input type="text" name="name" required />
+                </div>
+                <input type="hidden" name="postId" value="<%=element.id%>" required />
+                <button class="submit_btn"  onclick="commentForm(0)" type="button">Submit</button>
+            </form>
+
+            <% var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']; %> 
+            <% chat.forEach(function(com,no){ %> <%if(!com.responseTo){%> <% function reply(el){ %>
+            <div class="Reponse">
+                <div class="request">
+                    <div class="dp">F</div>
+                    <div class="request_detail">
+                        <p class="request_name"><%=el.name%></p>
+                        <p class="content"><%=el.content%></p>
+                        <div class="reply">
+                            
+                            <span onclick="toggle('<%=com.id%>')">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <% function replyTo(id){%> <% chat.forEach(function(repTo){ %> <%if(repTo.responseTo == id){ %>
+                <div class="replyTo">
+                    <div class="Reponse">
+                        <div class="request"> 
+                            <div class="dp">F</div>
+                            <div class="request_detail">
+                                <p class="request_name"><%=repTo.name%></p>
+                                <p class="content"><%=repTo.content%></p>
+                                <div class="reply">
+                                    <!-- <p><%=new Date(repTo.createdAt).getDate()%> <%=month[new Date(repTo.createdAt).getMonth()]%></p> -->
+                                    <!-- <span onclick="toggle('<%=repTo.id%>')">Reply</span>
+                                </div>
+                            </div>
+                        </div>
+                        <%replyTo(repTo.id)%>
+
+                        <form action="/comment" method="POST" class="flex" id="ind<%=repTo.id%>">
+                            <div class="form-group">
+                                <span>Leave a comment</span>
+                                <textarea type="text" rows="4" cols="80" name="content" required></textarea>
+                            </div>
+
+                            <div class="form-group user_name">
+                                <span>Name</span>
+                                <input type="text" name="name" required />
+                            </div>
+                            <input type="hidden" name="responseTo" value="<%=repTo.id%>" required />
+                            <input type="hidden" name="postId" value="<%=element.id%>" required />
+                            <button class="submit_btn" onclick="commentForm('<%=repTo.id%>')" type="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <% } %> <%})%> <% } replyTo(com.id)%>
+
+                <form action="/comment" method="POST" class="flex" id="ind<%=com.id%>">
+                    <div class="form-group">
+                        <span>Leave a comment</span>
+                        <textarea type="text" rows="4" cols="80" name="content" required></textarea>
+                    </div>
+
+                    <div class="form-group user_name">
+                        <span>Name</span>
+                        <input type="text" name="name" required />
+                    </div>
+
+                    <input type="hidden" name="responseTo" value="<%=el.id%>" required />
+                    <input type="hidden" name="postId" value="<%=element.id%>" required />
+
+                    <button class="submit_btn" onclick="commentForm('<%=com.id%>')" type="button">Submit</button>
+                </form>
+            </div>
+            <%} reply(com) %> <%} %> <% }) %> -->
+          </div> 
+         
+           
+       <!--comment -->

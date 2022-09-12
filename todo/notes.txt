@@ -1,0 +1,33 @@
+ <h6>Comments</h6>
+        <div class="card">
+            <div class="card-body py-0">
+                <div class="row">
+                    <div class="col-2  d-flex justify-content-center" >
+                        <div class=" text-align-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" style="max-width: 50px"/>
+                            </div>
+                            <p class="text-secondary text-center py-0 my-0" style="font-size: 10px">15 Minutes Ago</p>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                            <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+    
+                       </p>
+                       <div class="clearfix"></div>
+                        <p class="py-0 my-0">Lorem   Ipsum.</p>
+                        <p>
+                            <a class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Reply</a>
+                            <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                       </p>
+                    </div>
+                </div>
+                    
+                        </div>
+                    </div>
+          

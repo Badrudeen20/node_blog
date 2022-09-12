@@ -1,0 +1,36 @@
+<%- include('component/header.ejs') %>
+
+
+<div class="container w-75">
+    <form method="post" action="/update/<%=data.id%>" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Post Title</label>
+            <input type="text" required class="form-control" name="title" id="title" value="<%= data.title%>" aria-describedby="postHelp" placeholder="Enter Post Title">
+        </div>
+        <div class="form-group">
+            <label for="des">Post Describtion</label>
+            <textarea class="form-control" id="des" name="des" required  placeholder="Enter Post Describtion"><%= data.des%></textarea>
+        </div>
+        <div class="form-group">
+            <label for="file">Post Image</label>
+            <input type="file" id="myfile" class="form-control" name="mypic" placeholder="Select Image">
+            <div class="img w-100">
+                <img class="card-img-top preview" id="img" src="/post/<%= data.image%>" />
+            </div>
+        </div>
+       
+        <div class="d-flex">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+    </form>  
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity=
+        "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+</script>
+<script src="./js/postEdit.js"></script>
+
+
+<%- include('component/footer.ejs') %>
